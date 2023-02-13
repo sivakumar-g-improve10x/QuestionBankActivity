@@ -31,12 +31,12 @@ public class ButtonsActivity extends AppCompatActivity {
 
     private void question1() {
         questionBtn.setOnClickListener(view -> {
-            String question1 = "How many planets are in the solar system";
+            String question = "How many planets are in the solar system";
             String optionA = "10";
             String optionB = "8";
             String optionC = "12";
             String optionD = "9";
-         navigateToQuestionsAndAnswerActivity(question1,optionA,optionB,optionC,optionD );
+            navigateToQuestionsAndAnswerActivity(question,optionA,optionB,optionC,optionD );
         });
     }
 

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
@@ -18,6 +19,7 @@ public class QuestionAndAnswersActivity extends AppCompatActivity {
     String optionB;
     String optionC;
     String optionD;
+    Button submitBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,15 +28,23 @@ public class QuestionAndAnswersActivity extends AppCompatActivity {
         handleInitView();
         getQuestionData();
         displayQuestions();
+        handleSubmitBtn();
 
+
+    }
+
+    private void handleSubmitBtn() {
+        submitBtn.setOnClickListener(v -> {
+
+        });
     }
 
     private void displayQuestions() {
         text1Txt.setText(question1);
         radio1Btn.setText(optionA);
-        radio1Btn.setText(optionB);
-        radio1Btn.setText(optionC);
-        radio1Btn.setText(optionD);
+        radio2Btn.setText(optionB);
+        radio3Btn.setText(optionC);
+        radio4Btn.setText(optionD);
 
     }
     private void handleInitView() {
@@ -43,10 +53,11 @@ public class QuestionAndAnswersActivity extends AppCompatActivity {
         radio2Btn = findViewById(R.id.radio2_rb);
         radio3Btn = findViewById(R.id.radio3_rb);
         radio4Btn = findViewById(R.id.radio4_rb);
+        submitBtn = findViewById(R.id.submit_btn);
     }
     public  void getQuestionData(){
         Intent intent = getIntent();
-        question1 = intent.getStringExtra("Question1");
+        question1 = intent.getStringExtra("question");
         optionA = intent.getStringExtra("option 1");
         optionB = intent.getStringExtra("option 2");
         optionC = intent.getStringExtra("option 3");
