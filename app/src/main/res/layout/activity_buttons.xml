@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ButtonsActivity">
+
+    <Button
+        android:id="@+id/question_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="question 1" />
+
+    <Button
+        android:id="@+id/Question_2_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question2" />
+
+    <Button
+        android:id="@+id/question_3_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question3" />
+
+    <Button
+        android:id="@+id/question_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question 4" />
+</LinearLayout>
