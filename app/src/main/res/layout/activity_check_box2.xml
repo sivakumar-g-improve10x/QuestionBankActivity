@@ -8,7 +8,7 @@
     tools:context=".CheckBoxActivity">
 
     <TextView
-        android:id="@+id/text_one_txt"
+        android:id="@+id/text_cb_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView" />
